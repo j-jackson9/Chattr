@@ -71,16 +71,20 @@
                 </div>
                 <div class="actions">
                     <div class="heart">
-                        <i class="fa-regular fa-heart"><span>4.3K</span></i>
+                        <i class="fa-regular fa-heart" onclick="toggleHeart(this)"><span>4.3K</span></i>
+                        <div class="like-text">Like</div>
                     </div>
                     <div class="comment">
                         <i class="fa-regular fa-comment"><span>23</span></i>
+                        <div class="comment-text">Comment</div>
                     </div>
                     <div class="retweet">
                         <i class="fa-solid fa-retweet"><span>17</span></i>
+                        <div class="retweet-text">Retweet</div>
                     </div>
                     <div class="share">
                         <i class="fa-solid fa-share"></i>
+                        <div class="share-text">Share</div>
                     </div>
                 </div>
             </div>
@@ -99,16 +103,20 @@
                 </div>
                 <div class="actions">
                     <div class="heart">
-                        <i class="fa-regular fa-heart"><span>20.3K</span></i>
+                        <i class="fa-regular fa-heart" onclick="toggleHeart(this)"><span>20.3K</span></i>
+                        <div class="like-text">Like</div>
                     </div>
                     <div class="comment">
                         <i class="fa-regular fa-comment"><span>171</span></i>
+                        <div class="comment-text">Comment</div>
                     </div>
                     <div class="retweet">
                         <i class="fa-solid fa-retweet"><span>5.6k</span></i>
+                        <div class="retweet-text">Retweet</div>
                     </div>
                     <div class="share">
                         <i class="fa-solid fa-share"></i>
+                        <div class="share-text">Share</div>
                     </div>
                 </div>
             </div>
@@ -118,5 +126,26 @@
             <h1>Latest News</h1>
     </div>
     <script src="https://kit.fontawesome.com/71330fe78e.js" crossorigin="anonymous"></script>
+    <script>
+    function toggleHeart(heart) {
+        if (heart.classList.contains('fa-regular')) {
+            heart.classList.remove('fa-regular');
+            heart.classList.add('fa-solid');
+            heart.style.color = 'red';
+        } else {
+            heart.classList.remove('fa-solid');
+            heart.classList.add('fa-regular');
+            heart.style.color = 'black';
+        }
+
+        let likeText = heart.parentElement.querySelector('.like-text');
+
+        if (heart.classList.contains('fa-solid')) {
+            likeText.textContent = 'Unlike';
+        } else {
+            likeText.textContent = 'Like';
+        }
+  }
+    </script>
 </body>
 </html>
