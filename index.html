@@ -15,6 +15,7 @@
 
         <div class="header">
             <h1>Welcome<span>, User</span>!</h1>
+            <i class="fa-solid fa-circle-user"></i>
             <i class="fa-solid fa-bell" style="color: #0165E1"></i>
             <i class="fa-solid fa-circle"></i>
             <p class="notification-number">3</p>
@@ -23,6 +24,7 @@
         <!--Sidebar-->
 
         <div class="sidebar">
+            <i class="fa-solid fa-bars" onclick="openSideBar()"></i>
             <div class="logo">
                 <i class="fa-regular fa-comments" style="color: #ffffff;"></i>
             </div>
@@ -147,26 +149,6 @@
                 <p>987 posts</p>
         </div>
     <script src="https://kit.fontawesome.com/71330fe78e.js" crossorigin="anonymous"></script>
-    <script>
-    function toggleHeart(heart) {
-        if (heart.classList.contains('fa-regular')) {
-            heart.classList.remove('fa-regular');
-            heart.classList.add('fa-solid');
-            heart.style.color = 'red';
-        } else {
-            heart.classList.remove('fa-solid');
-            heart.classList.add('fa-regular');
-            heart.style.color = 'black';
-        }
-
-        let likeText = heart.parentElement.querySelector('.like-text');
-
-        if (heart.classList.contains('fa-solid')) {
-            likeText.textContent = 'Unlike';
-        } else {
-            likeText.textContent = 'Like';
-        }
-  }
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -33,7 +33,21 @@
 .fa-bell {
     color: #0165E1;
     font-size: 50px;
-    margin-left: 1350px;
+    margin-left: 1300px;
+}
+
+.fa-bell:hover {
+    cursor: pointer;
+}
+
+.fa-circle-user {
+   color: #0165E1;
+   font-size: 50px;
+   margin-left: 20px;
+}
+
+.fa-circle-user:hover{
+    cursor: pointer;
 }
 
 .fa-circle {
@@ -64,6 +78,10 @@
 .sidebar {
     grid-area: sidebar;
     background-color: #0165E1;
+}
+
+.sidebar .fa-bars {
+    display: none;
 }
 
 .logo {
@@ -404,3 +422,44 @@
     border-bottom: 2px solid #E0E0E0;
 }
 
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "header" 
+            "content";
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 3fr;
+    }
+
+    .header {
+        grid-area: header;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        background-color: red;
+    }
+
+    .header h1 {
+        margin-left: 60px;
+        font-size: 24px;
+    }
+
+    .fa-bell, .fa-circle-user {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .fa-circle {
+        font-size: 15px;
+        margin-top: -14px;
+        margin-left: -13px;
+    }
+
+    .notification-number {
+        font-size: 15px;
+        margin-top: -20px;
+        margin-left: -23px;
+    }
+}
