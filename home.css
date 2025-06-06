@@ -30,6 +30,10 @@
     font-weight: 300;
 }
 
+.header .fa-bars {
+    display:none;
+}
+
 .fa-bell {
     color: #0165E1;
     font-size: 50px;
@@ -427,10 +431,10 @@
 @media (max-width: 768px) {
     .container {
         grid-template-areas:
-            "header" 
+            "header header" 
             "content";
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 3fr;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 0fr 3fr;
     }
 
     .header {
@@ -438,28 +442,31 @@
         justify-content: center;
         padding: 10px;
         width: 100%;
-        background-color: red;
     }
-
+    .header .fa-bars {
+        display: block;
+        color: black;
+        font-size: 20px;
+        margin-left: -160px;
+    }
     .header h1 {
-        margin-left: 60px;
-        font-size: 24px;
+        margin-left: 30px;
+        font-size: 20px;
+        text-align: center;
     }
-
-    .fa-bell, .fa-circle-user {
+    
+    .fa-bell{
         font-size: 30px;
-        margin-left: 20px;
+        margin-left: 70px;
+        margin-right: -120px;
     }
-
-    .fa-circle {
-        font-size: 15px;
-        margin-top: -14px;
-        margin-left: -13px;
+    .fa-circle-user {
+        font-size: 30px;
+        margin-left: 10px;
+        margin-right: 180px;
     }
-
-    .notification-number {
-        font-size: 15px;
-        margin-top: -20px;
-        margin-left: -23px;
+    
+    .sidebar {
+        display: none;
     }
 }
