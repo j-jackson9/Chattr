@@ -20,13 +20,16 @@ function toggleHeart(heart) {
 
 let sideBarButton = document.querySelector('.fa-bars');
 let sideBar = document.querySelector('.sidebar');
+let overLay = document.querySelector('.overlay');
 
   function openSideBar() {
     if(window.innerWidth <= 768) {
      if (sideBar.style.display === 'block') {
         sideBar.style.display = 'none';
+      
     } else {
         sideBar.style.display = 'block';
+       
     }
   }
 }
