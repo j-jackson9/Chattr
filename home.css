@@ -574,3 +574,57 @@
         display: none;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+     .header .fa-bars {
+        font-size: 30px;
+        margin-left: -450px;
+     }
+
+    .header h1 {
+        font-size: 34px;
+    }
+    
+    .fa-circle-user {
+        font-size: 40px;
+    }
+     .fa-bell {
+        position: absolute;
+        margin-left: 500px;
+        font-size: 40px;
+     }
+
+     .content h1 {
+        font-size: 40px;
+     }
+
+     .post-box {
+        width: 70%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: none;
+     }
+
+    .post-header img {
+        width: 50px;
+        height: 50px;
+     }
+
+    .post-header .user-name {
+        font-size: 24px;
+     }
+
+    .post-header span {
+        font-size: 24px;
+     }
+
+    .post-header .post-time {
+        font-size: 24px;
+     }
+
+    .user-post {
+        width: 80%;
+        height: 300px;
+     }
+}
