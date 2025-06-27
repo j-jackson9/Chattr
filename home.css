@@ -337,7 +337,7 @@
     margin-top: 20px;
 }
 
-.actions, .heart, .fa-comment, .fa-retweet, .fa-share {
+.actions, .heart, .fa-comment, .fa-share {
     font-size: 25px;
     margin-right: 50px;
     font-weight: 800;
@@ -359,12 +359,6 @@
     cursor: pointer;
 }
 
-.fa-retweet:hover {
-    transition: color 0.5s ease;
-    color: rgb(49, 201, 2);
-    cursor: pointer;
-}
-
 .fa-share:hover {
     transition: color 0.5s ease;
     color: #0165E1;
@@ -372,7 +366,6 @@
 }
 
 .fa-share:hover + .share-text, 
-.fa-retweet:hover + .retweet-text, 
 .fa-comment:hover + .comment-text, 
 .fa-heart:hover + .like-text {
     visibility: visible;
@@ -380,7 +373,6 @@
 }
 
 .like-text,
-.retweet-text,
 .comment-text,
 .share-text {
     display: flex;
@@ -433,7 +425,7 @@
  
 /*MEDIA QUERIES*/
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .container {
         grid-template-areas:
             "header header" 
@@ -548,8 +540,8 @@
         margin-top: 10px;
     }
 
-    .actions, .heart, .fa-comment, .fa-retweet, .fa-share {
-        font-size: 15px;
+    .actions, .heart, .fa-comment, .fa-share {
+        font-size: 25px;
         margin-right: 24px;
         font-weight: 800;
     }
@@ -558,7 +550,7 @@
         font-weight: 300;
     }
 
-    .fa-heart:hover, .fa-comment:hover, .fa-retweet:hover, .fa-share:hover {
+    .fa-heart:hover, .fa-comment:hover, .fa-share:hover {
         transition: none;
     }
 
@@ -593,6 +585,12 @@
         margin-left: 500px;
         font-size: 40px;
      }
+
+     .news {
+        display: none;
+     }
+
+
 
      .content h1 {
         font-size: 40px;
@@ -631,40 +629,10 @@
         height: 300px;
      }
 
-    .actions, .heart, .fa-comment, .fa-retweet, .fa-share {
+    .actions, .heart, .fa-comment, .fa-share {
         font-size: 30px;
         margin-right: 20px;
         font-weight: 800;
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1024px) {
-    .fa-bell {
-        position: absolute;
-        margin-left:550px;
-        font-size: 40px;
-    }
-
-    .news {
-        display: none;
-    }
-
-    .content {
-        border: none;
-        box-shadow: none;
-        overflow-x: hidden;
-    }
-
-    .content h1 {
-        font-size: 50px;
-    }
-
-    .post-box {
-        width: 70%;
-        height: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border-radius: none;
-        border: 3px solid re;
-    }
-}
