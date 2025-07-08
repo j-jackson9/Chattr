@@ -429,7 +429,7 @@
             "header header" 
             "content content";
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 0fr 2fr;
+        grid-template-rows: auto 2fr;
         overflow-x: hidden;
     }
 
@@ -438,6 +438,7 @@
         justify-content: center;
         padding: 10px;
         width: 100%;
+        background-color: red;
     }
     .header .fa-bars {
         display: block;
