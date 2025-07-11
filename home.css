@@ -434,6 +434,7 @@
     }
 
     .header {
+        display: flex;
         grid-area: header;
         justify-content: center;
         padding: 10px;
@@ -458,6 +459,14 @@
     .fa-circle-user {
         font-size: 30px;
     }
+
+    .right-icons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-left: auto;
+        margin-right: 16px;
+  }
     
     .sidebar { 
         display: none;
@@ -578,8 +587,6 @@
     
      .fa-bell {
         position: absolute;
-        margin-left: 500px;
-        font-size: 40px;
      }
 
      .news {
@@ -646,13 +653,11 @@
 
 @media (max-width: 1024px) and (max-height: 650px) {
     .fa-bell {
-        margin-left: 750px;
     }
 }
 
 @media (min-width: 1280px) and (max-height: 800px) {
     .fa-bell {
-        margin-left: 800px;
     }
     .content {
         width: 100%;
@@ -664,13 +669,12 @@
 
 @media (min-height: 1366px) {
     .fa-bell {
-        margin-left: 750px;
     }
 }    
 
 @media(min-height: 1368px) {
     .fa-bell {
-        margin-left: 650px;
+
     }
 }
 
@@ -680,6 +684,6 @@
   }
 
   .fa-bell {
-    margin-left: 10px;
+
   }
 }
