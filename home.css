@@ -436,13 +436,13 @@
     .header {
         display: flex;
         grid-area: header;
-        justify-content: center;
+        justify-content: space-between; 
         padding: 10px;
         width: 100%;
 
     }
     .header .fa-bars {
-        display: block;
+        display: block; 
         color: black;
         font-size: 20px;
     }
@@ -579,6 +579,7 @@
 
     .header h1 {
         font-size: 34px;
+        flex-grow: 1;
     }
     
     .fa-circle-user {
@@ -593,6 +594,16 @@
         display: none;
      }
 
+     .right-icons {
+        gap: 12px; 
+        margin-left: auto;
+        margin-right: 16px;
+     }
+
+     .right-icons i {
+       flex-shrink: 0;
+     }
+
      .content {
         width: 150%;
         margin-left: 50px;
@@ -602,6 +613,7 @@
 
      .content h1 {
         font-size: 40px;
+        text-decoration: underline #0165E1; 
      }
 
      .post-box {
