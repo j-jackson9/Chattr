@@ -109,111 +109,49 @@
     margin-top: -20px;
 }
 
-.home {
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
-    margin-top: 30px;
-    width: fit-content;
-    padding: 5px;
-}
-
-.fa-house {
-    color: white;
-    font-size: 30px;
-}
-
-.home h1 {
-    color: white;
-    font-weight: 300;
-    font-size: 30px;
-    margin-left: 10px;
-}
-
-.messages {
-    display: flex;
-    left: 200px;
-    align-items: center;
-    margin-left: 30px;
-    margin-top: 25px;
-    width: fit-content;
-    padding: 5px;
-}
-
-.fa-message {
-    color: white;
-    font-size: 30px;    
-}
-
-.messages h1 {
-    color: white;
-    font-weight: 300;
-    font-size: 30px;
-    margin-left: 10px;
-}
-
-.friends {
-    display: flex;
-    left: 200px;
-    align-items: center;
-    margin-left: 30px;
-    margin-top: 25px;
-    width: fit-content;
-    padding: 5px;
-}
-
-.fa-user-friends {
-    color: white;
-    font-size: 30px;    
-}
-
-.friends h1 {
-    color: white;
-    font-weight: 300;
-    font-size: 30px;
-    margin-left: 10px;
-}
-
-.post {
-    display: flex;
-    left: 200px;
-    align-items: center;
-    margin-left: 30px;
-    margin-top: 25px;
-    width: fit-content;
-    padding: 5px;
-}
-
-.fa-plus{
-    color: white;
-    font-size: 30px;
-    border: 3px solid white;
-    padding: 5px 5px 5px 5px;
-    border-radius: 10px    
-}
-
-.post h1 {
-    color: white;
-    font-weight: 300;
-    font-size: 30px;
-    margin-left: 10px;
-}
-
+.home,
+.messages,
+.friends,
+.post,
 .settings {
     display: flex;
-    left: 200px;
     align-items: center;
     margin-left: 30px;
-    margin-top: 25px;
     width: fit-content;
     padding: 5px;
 }
 
-.fa-gear{
+.home {
+    margin-top: 30px;
+}
+
+.messages,
+.friends,
+.post,
+.settings {
+    margin-top: 25px;
+    left: 200px;
+}
+
+.fa-house,
+.fa-message,
+.fa-user-friends,
+.fa-plus,
+.fa-gear {
     color: white;
     font-size: 30px;
 }
 
+.fa-plus {
+    border: 3px solid white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.home h1,
+.messages h1,
+.friends h1,
+.post h1,
 .settings h1 {
     color: white;
     font-weight: 300;
@@ -222,7 +160,7 @@
 }
 
 .home:hover,
-.messages:hover,        
+.messages:hover,
 .friends:hover,
 .post:hover,
 .settings:hover {
@@ -232,11 +170,16 @@
     transition: background-color 0.5s ease;
 }
 
-.sidebar .home a {
-    text-decoration: none;   
-    display: flex;           
+.sidebar .home a,
+.messages a,
+.friends a,
+.post a,
+.settings a {
+    text-decoration: none;
+    display: flex;
     align-items: center;
 }
+
 
 /*Main*/
 

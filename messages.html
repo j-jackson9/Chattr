@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"  viewport-fit="cover">
+    <link href="home.css"  rel="stylesheet">
+    <link href="messages.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Paytone+One&display=swap" rel="stylesheet">
+    <title>Chattr</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+
+        <div class="header">
+            <i class="fa-solid fa-bars" onclick="openSideBar()"></i>
+            <h1>Welcome!</h1>
+            <div class="right-icons">
+                <i class="fa-solid fa-circle-user"></i>
+                <i class="fa-solid fa-bell" style="color: #0165E1"></i>
+            </div>
+        </div>
+
+        <!--Sidebar-->
+
+        <div class="sidebar">
+            <i class="fa-solid fa-xmark" onclick="openSideBar()"></i>
+            <div class="logo">
+                <i class="fa-regular fa-comments" style="color: #ffffff;"></i>
+            </div>
+            <h1 class="logo-name"style="color: white">Chattr</h1>
+
+            <div class="home">
+                <a href="index.html">
+                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                <h1>Home</h1>
+            </a>
+            </div>
+
+            <div class="messages">
+                <a href="messages.html"> 
+                <i class="fa-solid fa-message" style="color: #ffffff;"></i>
+                <h1>Messages</h1>
+            </a>
+            </div>
+
+            <div class="friends">
+                <a href="friends.html">
+                <i class="fa-solid fa-user-friends" style="color: #ffffff;"></i>
+                <h1>Friends</h1>
+            </a>
+            </div>
+
+            <div class="post">
+                <a href="post.html">
+                <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                <h1>Post</h1>
+            </a>
+            </div>
+            <div class="settings">
+                <a href="settings.html">
+                <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                <h1>Settings</h1>
+            </a>
+            </div>
+        </div>
+
+        <div class="friends-list">
+             <h1>Friends</h1>
+                <div class="friend">
+                    <img src="nba logo.png" alt="User Avatar" class="user-avatar">
+                        <p class="user-name"></p>
+                        <p class="posts">Posts</p>
+                        <p>5</p>
+                        <p class="followers">Followers</p>
+                        <p>10</p>
+                        <p class="following">Following</p>
+                        <p>2</p>
+                        <button class="message-button">Message</button>
+                </div>
+        </div>
+         
+
+           
+        <script src="https://kit.fontawesome.com/71330fe78e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
