@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-    border: 1px red solid;
-    width: 250%;
-    margin-left: 50%;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: red 2px solid;
 }
 
 .friends-list h1 {
@@ -15,14 +16,63 @@
 
 .friend {
     display: flex;
-    margin: 50px 0;
+    margin-top: 50px ;
     align-items: center;
+    gap: 20px;
+    width: 100%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
     padding: 20px;
+    font-weight: 700;
 }
 
 .friend img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+
+.post-count span,
+.followers-count span,
+.following-count span {
+    font-weight: 400;
+}
+
+.message-button {
+    background-color: #0165E1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-button:hover {
+    background-color: #378cfa;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+    .friends-list {
+        width: 90%;
+        margin: 0 auto;
+        outline: 7px solid #0165E1;
+    }
+
+    .friend {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .friend img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .message-button {
+        width: 100%;
+        text-align: center;
+    }
 }
