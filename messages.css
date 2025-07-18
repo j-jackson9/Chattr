@@ -1,12 +1,8 @@
 .container {
-    display: grid;
-    grid-template-areas: 
-        "sidebar header header header"
-        "sidebar content content news";
-    grid-template-columns: 0.5fr 1fr 1fr 1.5fr;
-    grid-template-rows: 100px 1fr;
-    height: 100vh;
-    row-gap: 30px;
+    grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+  grid-template-columns: 0fr 1fr;
 }
 
 .friends-list {
@@ -63,9 +59,19 @@
 /*MEDIA QUERIES*/
 
 @media (max-width: 768px) {
+
+    .container {
+        grid-template-areas:
+            "header header" 
+            "content content";
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto 2fr;
+        overflow-x: hidden;
+    }
+
     .friends-list {
         width: 90%;
-        margin: 0 auto;
+       align-items: center;
     }
 
     .friend {
