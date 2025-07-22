@@ -1,14 +1,19 @@
 .container {
+    display: grid;
     grid-template-areas:
-    "sidebar header"
+    "sidebar header header"
     "sidebar content";
-  grid-template-columns: 0fr 1fr;
+    grid-template-columns: 0fr 1fr;
+    grid-template-rows: 100px 1fr;
+    height: 100vh;
+    row-gap: 30px;
+    overflow-x: hidden;
 }
 
 .friends-list {
    display: grid;
    place-items: center;
-   max-width: 500px;
+   max-width: 550px;
    margin: 0 auto; /* this centers the block horizontally */
    padding: 20px;
 }
@@ -62,22 +67,24 @@
 
     .container {
         grid-template-areas:
-            "header header" 
+            "header header header" 
             "content content";
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: auto 2fr;
+        grid-template-columns: 0fr 1fr;
+        grid-template-rows: 1fr 2fr;
         overflow-x: hidden;
     }
 
     .friends-list {
-        width: 90%;
+       grid-area: content;
+       width: 80%;
        align-items: center;
+       margin: 0 auto;
     }
 
     .friend {
-        width: 80%;
+        width: 65%;
         flex-direction: column;
-    }
+    } 
 
     .friend img {
         width: 80px;
@@ -89,3 +96,25 @@
         text-align: center;
     }
 }
+
+@media (max-width: 768px) and (min-width: 1024px) {
+    .container {
+        grid-template-areas:
+            "sidebar header"
+            "sidebar content";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 100px 1fr;
+        overflow-x: hidden;
+    }
+
+    .friends-list {
+        width: 90%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .friend {
+        width: 80%;
+    }
+}
+
