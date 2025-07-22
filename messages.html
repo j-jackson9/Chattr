@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"  viewport-fit="cover">
     <link href="home.css"  rel="stylesheet">
-    <link href="friends.css" rel="stylesheet">
+    <link href="messages.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Paytone+One&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
 
         <div class="header">
             <i class="fa-solid fa-bars" onclick="openSideBar()"></i>
-            <h1>Friends</h1>
+            <h1>Messages</h1>
             <div class="right-icons">
                 <i class="fa-solid fa-circle-user"></i>
                 <i class="fa-solid fa-bell" style="color: #0165E1"></i>
@@ -59,6 +59,7 @@
                 <h1>Post</h1>
             </a>
             </div>
+
             <div class="settings">
                 <a href="settings.html">
                 <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
@@ -67,48 +68,28 @@
             </div>
         </div>
 
-       <div class="friends-list">
-         <h1>Your Friends</h1>
-         <div class="friend">
-            <img src="lebron.webp" alt="Friend 1">
-            <p class="friend-name">Ricky Montana</p>
-            <p class="friend-status"><i class="fa-solid fa-circle" style="color: #16c60c;"></i>Online</p>
-            <p class="post-count">Posts: <span>5</span></p>
-            <p class="followers-count">Followers: <span>120</span></p>
-            <p class="following-count">Following: <span>30</span></p>
-            <button class="message-button">Message</button>
-         </div>
-
-         <div class="friend">
-            <img src="tony-soprano.jpg" alt="Friend 1">
-            <p class="friend-name">Tony Soprano</p>
-            <p class="friend-status"><i class="fa-solid fa-circle" style="color: red;"></i>Offline</p>
-            <p class="post-count">Posts: <span>5,944</span></p>
-            <p class="followers-count">Followers: <span>5.1M</span></p>
-            <p class="following-count">Following: <span>345</span></p>
-            <button class="message-button">Message</button>
-         </div>
-
-         <div class="friend">
-            <img src="random-guy.png" alt="Friend 1">
-            <p class="friend-name">Nick Johnson</p>
-            <p class="friend-status"><i class="fa-solid fa-circle" style="color: yellow"></i>Away</p>
-            <p class="post-count">Posts: <span>264</span></p>
-            <p class="followers-count">Followers: <span>198k</span></p>
-            <p class="following-count">Following: <span>87</span></p>
-            <button class="message-button">Message</button>
-         </div>
-
-          <div class="friend">
-            <img src="random-woman.jpg" alt="Friend 1">
-            <p class="friend-name">Jazz James</p>
-            <p class="friend-status"><i class="fa-solid fa-moon"></i>Away</p>
-            <p class="post-count">Posts: <span>17</span></p>
-            <p class="followers-count">Followers: <span>18k</span></p>
-            <p class="following-count">Following: <span>405</span></p>
-            <button class="message-button">Message</button>
-         </div>
-       </div>
+        <div class="message">
+            <div class="message-list"> 
+                <h1>Messages</h1>
+                <div class="message-name">
+                    <p>Tony Soprano</p>
+                    <p>Ricky Montana</p>
+                    <p>Jazz James</p>
+                </div>
+            </div>
+            <div class="message-content">
+                <h1>Tony Soprano</h1>
+                <div class="chat-history">
+                    <p class="message-in">Hey, how's it going?</p>
+                    <p class="message-out">Not bad, just working on some stuff. You?</p>
+                </div>
+                <form class="message-input">
+                    <input type="text" placeholder="Type a message...">
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+       
 
 
            
