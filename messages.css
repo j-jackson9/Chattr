@@ -10,19 +10,109 @@
     overflow-x: hidden;
 }
 
+.message {
+    grid-area: content;
+    display: flex;
+    overflow-y: hidden;
+    justify-content: center;
+}
+
+
 .message-list {
     background-color: rgb(63, 59, 59);
     font-size: 30px;
     color: white;
-    width: 16%;
+    width: 20%;
     height: 100%;
     padding: 20px;
     margin-left: 10px;
 }
 
-.message-names p:hover {
+.message-name p:hover {
     background-color: grey;
     cursor: pointer;
     border-radius: 10px;
+    width: fit-content;
     transition: background-color 0.5s ease;
 } 
+
+.message-content h1 {
+    border-bottom: 1px solid lightgray;
+}
+
+.message-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 30%;
+    padding: 40px;
+}
+
+.chat-history {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.message-in {
+    padding: 10px;
+    background-color: #f0f0f0;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.message-out {
+    display: flex;
+    padding: 10px;
+    background-color: #0165E1;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    align-self: flex-end;
+    margin-bottom: 100px;
+}
+
+.message-content h1 {
+    text-align: center;
+}
+
+.message-input{
+   position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.message-input input {
+    width: 85%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+
+}
+
+.message-input button {
+    width: 50px;
+    height: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: #0165E1;
+    color: white;
+}
+
+
+.message-input button:hover {
+    background-color: #378cfa;
+    cursor: pointer;
+}
