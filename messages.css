@@ -17,6 +17,9 @@
     justify-content: center;
 }
 
+.message-list-dropdown {
+    display: none;
+}
 
 .message-list {
     background-color: #f0f0f0;
@@ -97,8 +100,7 @@
     border-radius: 10px;
     font-size: 20px;
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .message-input button {
@@ -138,12 +140,15 @@
     }
 
     .message-list {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        height: 35%;
-        font-size: 20px;
-        align-items: center;
+        display: none;
+    }
+
+    .message-list-dropdown {
+        display: block;
+        width: 100%;
+        text-align: center;
+        background-color: #f0f0f0;
+        padding: 10px;
     }
 
     .message-content {
@@ -151,7 +156,6 @@
         height: 60%;
         padding: 20px;
         position: static;
-        overflow-y: auto;
     }
 
     .chat-history {
