@@ -1,3 +1,5 @@
+/*heart function*/
+
 function toggleHeart(heart) {
     if (heart.classList.contains('fa-regular')) {
         heart.classList.remove('fa-regular');
@@ -18,6 +20,8 @@ function toggleHeart(heart) {
     }
   }
 
+/*sidebar function*/
+
 let sideBarButton = document.querySelector('.fa-bars');
 let sideBar = document.querySelector('.sidebar');
 let overLay = document.querySelector('.overlay');
@@ -33,3 +37,16 @@ let overLay = document.querySelector('.overlay');
     }
   }
 }
+
+/*conversation function*/
+
+function selectConversation(name) {
+   let convoList = document.querySelector('.convo');
+   let message = document.querySelector('.message-content');
+   if(convoList.textContent.name === name) {
+       message.innerHTML
+    }
+      
+   }
+
+

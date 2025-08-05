@@ -72,10 +72,10 @@
             <div class="message-list"> 
                 <h1>Conversations</h1>
                 <div class="message-name">
-                    <p>Tony Soprano</p>
-                    <p>Ricky Montana</p>
-                    <p>Nick Johnson</p>
-                    <p>Jazz James</p>
+                    <p class="convo" onclick="selectConversation('Tony Soprano')">Tony Soprano</p>
+                    <p class="convo" onclick="selectConversation('Ricky Montana')">Ricky Montana</p>
+                    <p class="convo" onclick="selectConversation('Nick Johnson')">Nick Johnson</p>
+                    <p class="convo" onclick="selectConversation('Jazz James')">Jazz James</p>
                 </div>
             </div>
              <div class="message-list-dropdown"> 
@@ -84,10 +84,10 @@
                     <label for="message-dropdown">Select a conversation:</label>
                     <br>
                     <select id="message-dropdown" onchange="location = this.value;">
-                        <option value="Tony Soprano">Tony Soprano</option>
-                        <option value="Ricky Montana">Ricky Montana</option>
-                        <option value="Nick Johnson">Nick Johnson</option>
-                        <option value="Jazz James">Jazz James</option>
+                        <option onclick="selectConversation('Tony Soprano')">Tony Soprano</option>
+                        <option onclick="selectConversation('Ricky Montana')">Ricky Montana</option>
+                        <option onclick="selectConversation('Nick Johnson')">Nick Johnson</option>
+                        <option onclick="selectConversation('Jazz James')">Jazz James</option>
                     </select>
                 </div>
             </div>
@@ -99,7 +99,7 @@
                 </div>
                 <form class="message-input">
                     <input type="text" placeholder="Type a message...">
-                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    <button type="submit"><i class="fa-solid fa-arrow-up"></i></button>
                 </form>
             </div>
             </div>
