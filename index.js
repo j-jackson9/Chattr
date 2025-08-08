@@ -96,3 +96,21 @@ window.addEventListener('DOMContentLoaded', () => {
       selectConversation(savedName);
     }
   });
+
+  // Open friend chat from friends list
+ function openFriendChat(friendName) {
+    // Save the clicked friend
+    localStorage.setItem('selectedConversation', friendName);
+    // Navigate to messages page
+    window.location.href = 'messages.html';
+}
+
+// On messages page
+const friendId = localStorage.getItem('selectedConversation');
+
+if (friendId) {
+    selectConversation(friendId); // This needs to use friendId to find the right convo
+} else {
+    document.querySelector('.message-content').innerHTML =
+        '<h1>Select a friend to chat with</h1>';
+}
