@@ -110,7 +110,4 @@ const friendId = localStorage.getItem('selectedConversation');
 
 if (friendId) {
     selectConversation(friendId); // This needs to use friendId to find the right convo
-} else {
-    document.querySelector('.message-content').innerHTML =
-        '<h1>Select a friend to chat with</h1>';
-}
+} 
